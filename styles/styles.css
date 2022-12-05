@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #ffffff;
+  --background-color: #f2eae2;
+  --button-color: #3d8168;
+  --text-color: #6c7289;
+  --hover-color: #1c232b;
+  --name-font: "Fraunces", serif;
+  --default-font: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+img {
+  max-inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+.card {
+  max-inline-size: 37.5rem;
+  /* max-block-size: 37.5rem; */
+  margin: 4% 5%;
+  background-color: var(--primary-color);
+  border-radius: 14px;
+}
+.product-description-div {
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-category {
+  font-size: clamp(0.75rem, 0.75rem + 1.5vw, 1.5rem);
+  text-shadow: 0.4px 0.6px 0.9px black;
+  letter-spacing: 5px;
+}
+.product-name {
+  font-size: clamp(2rem, 0.75rem + 1.5vw, 4rem);
+  font-family: var(--name-font);
+}
+.product-description {
+  line-height: 1.44rem;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.new-price {
+  font-size: clamp(2rem, 2rem + 1.5vw, 4rem);
+  color: var(--button-color);
+}
+.original-price {
+  text-decoration: line-through;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  color: var(--primary-color);
+  border-radius: 8px;
+  padding: 0.75rem 0;
+  font-weight: 700;
+}

@@ -1,0 +1,13 @@
+@media (min-width: 720px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    border-radius: 14px 0 0 14px;
+  }
+  .card {
+    margin: 0;
+    object-position: 50% 50%;
+  }
+}
